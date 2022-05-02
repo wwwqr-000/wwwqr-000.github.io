@@ -1,1 +1,27 @@
-<p>This word describes your ideas, home, future and friends. Its called < ? php echo $_SERVER['REMOTE_ADDR'] ? >.</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--style elements-->
+  <style></style>
+  <!--body elements-->
+  <body></body>
+
+  <script type="application/javascript">
+    function getIP(json) {
+      document.write("This word describes your ideas, home, future, friends, location and phonenumber. Its called ", json.ip, ".");
+    }
+  </script>
+
+  <script
+    type="application/javascript"
+    src="https://api.ipify.org?format=jsonp&callback=getIP"
+  ></script>
+  <script>
+    //Any extra js elements
+  </script>
+</html>
